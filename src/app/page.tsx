@@ -220,7 +220,7 @@ export default function Portfolio() {
     <div className="min-h-screen bg-black text-white p-6">
       <div className=" gap-8">
         {/* Left Sidebar */}
-        <div className="space-y-8">
+        <div className="space-y-2">
           {/* Profile Header */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -255,15 +255,16 @@ export default function Portfolio() {
           </div>
 
           {/* Stats */}
-          <div className="flex gap-6">
-            <div>
-              <p className="text-lg font-bold text-white">{ccu}</p>
-              <p className="text-gray-400 text-xs">CCU</p>
-            </div>
-            <div>
-              <p className="text-lg font-bold text-white">{visits}</p>
-              <p className="text-gray-400 text-xs">Visits</p>
-            </div>
+          <div className="flex gap-2">
+            <p className="text-lg font-bold">
+              <span className="text-white">{ccu}</span>{' '} {/* The {' '} adds a space between them */}
+              <span className="text-gray-400 text-xs">ccu</span>
+            </p>
+            <p className="text-lg font-bold">
+              <span className="text-white">{visits}</span>{' '} {/* The {' '} adds a space between them */}
+              <span className="text-gray-400 text-xs">Visits</span>
+            </p>
+
           </div>
 
           {/* Bio */}
